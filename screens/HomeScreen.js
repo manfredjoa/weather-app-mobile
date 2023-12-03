@@ -1,7 +1,15 @@
 import React from "react";
-import { Text, View, SafeAreaView, StatusBar, TextInput } from "react-native";
+import {
+  Text,
+  View,
+  SafeAreaView,
+  StatusBar,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 import { Image } from "react-native";
 import { theme } from "../theme";
+// import { MagnifyingGlassIcon } from "react-native-heroicons";
 
 const HomeScreen = () => {
   return (
@@ -23,6 +31,12 @@ const HomeScreen = () => {
               placeholderTextColor={"lightgray"}
               className="pl-6 h-10 flex-1 text-base text-white"
             />
+            <TouchableOpacity
+              className="p-3 m-1 rounded-full"
+              style={{ backgroundColor: theme.bgWhite(0.3) }}
+            >
+              <Text>Icon</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </SafeAreaView>
